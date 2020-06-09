@@ -1,0 +1,8 @@
+{% extends 'blog_list.html' %}
+{% block title %}
+{{ blog_type.type_name}}
+{% endblock%}
+
+{%block blog_list_title%}{{ blog_type.type_name}}({{ blogs|length }})<a href="{% url 'blog_list'%}">显示全部博客</a>
+{%endblock%}
+
